@@ -6,11 +6,14 @@
       <v-form ref="registerCardForm">
       <v-container>
         <v-row dense>
+          <v-col cols="12"><v-select dense
+                                     label="Территориальный орган"></v-select></v-col>
+        </v-row>
+        <v-row dense>
           <v-col cols="6"><v-text-field dense
                                         required
                                         label="ФИО" 
                                         v-model="registerPerson.fio"></v-text-field></v-col>
-          <!-- <v-col cols="6"><register-card-dialog-date></register-card-dialog-date></v-col> -->
         </v-row>
         <v-row dense>
           <v-col cols="6"><v-text-field dense 
